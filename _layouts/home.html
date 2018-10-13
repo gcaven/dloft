@@ -3,7 +3,7 @@
 {% include head.html %}
 <body>
   {% include header.html %}
-  <div class="home-page">
+  <div class="page home-page">
     <div class="home-page__hero">
       <video poster={{ page.hero.thumbnail }} controls>
         <source src={{ page.hero.file }} type="video/mp4">
@@ -14,6 +14,9 @@
       {% for item in site.portfolio_items limit:3 %}
         <a href={{ item.url }}>
           <img src={{ item.thumbnail }} alt={{ item.title }} />
+          <h4 style="color: var({{ item.accentColor }})">
+            {{ item.type }}
+          </h4>
           <h3>{{ item.title }}</h3>
         </a>
       {% endfor %}

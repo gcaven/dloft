@@ -3,7 +3,7 @@
 {% include head.html %}
 <body>
   {% include header.html %}
-  <div class="portfolioroot-page">
+  <div class="page portfolioroot-page">
     {% for portfolio_item in site.portfolio_items %}
       <a href={{ portfolio_item.url }}>
         <img src={{ portfolio_item.thumbnail }} alt={{ portfolio.title }} />

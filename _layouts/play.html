@@ -3,7 +3,7 @@
 {% include head.html %}
 <body>
   {% include header.html %}
-  <div class="play-page">
+  <div class="page play-page">
     <div class="play-page__hero">
       <video poster={{ page.hero.thumbnail }} controls>
         <source src={{ page.hero.file }} type="video/mp4">
@@ -15,9 +15,9 @@
         <div class="play-page__experiment-tile-container">
           <div class="play-page__experiment-tile">
             <img src={{ item.thumbnail }}>
-            <h3>{{ item.title }}</h3>
+            <h4>{{ item.title }}</h4>
           </div>
-          <div class="play-page__lightbox-content">
+          <div class="play-page__experiment-lightbox-content">
             {% if item.video != null %}
               <video poster={{ item.video.thumbnail }}>
                 <source src={{ item.video.file }} type="video/mp4">
