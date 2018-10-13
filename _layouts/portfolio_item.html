@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <div class="portfolioitem-page">
+    <img src={{page.headerImage}}/>
+    {{ page.title }}/{{ page.type }}
+    <article>{{ page.content | markdownify }}</article>
+    <aside>
+      {% for video in page.sidebarMedia.videos %}
+        <video poster={{video.thumbnail}} controls>
+          <source src={{video.file}} type="video/mp4">
+        </video>
+      {% endfor %}
+      {% for image in page.sidebarMedia.images %}
+        <img src={{image}}></img>
+      {% endfor %}
+    </aside>
+  </div>
+</body>
