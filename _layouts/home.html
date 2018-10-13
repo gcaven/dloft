@@ -4,15 +4,19 @@
 <body>
   {% include header.html %}
   <div class="home-page">
-    <video poster={{ page.hero.thumbnail }} controls>
-      <source src={{ page.hero.file }} type="video/mp4">
-    </video>
+    <div class="home-page__hero">
+      <video poster={{ page.hero.thumbnail }} controls>
+        <source src={{ page.hero.file }} type="video/mp4">
+      </video>
+    </div>
     <h2>Featured Work</h2>
-    {% for item in site.portfolio_items limit:3 %}
-      <a href={{ item.url }}>
-        <img src={{ item.thumbnail }} alt={{ item.title }} />
-        <h3>{{ item.title }}</h3>
-      </a>
-    {% endfor %}
+    <div class="home-page__featured">
+      {% for item in site.portfolio_items limit:3 %}
+        <a href={{ item.url }}>
+          <img src={{ item.thumbnail }} alt={{ item.title }} />
+          <h3>{{ item.title }}</h3>
+        </a>
+      {% endfor %}
+    </div>
   </div>
 </body>
