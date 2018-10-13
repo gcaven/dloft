@@ -12,15 +12,15 @@ sidebarMedia:
 
 >It’s amazing what can happen when you take the time to understand your clients communication problems. What began as a fairly simple infographic became a complete redesign of the clients website.
 
-### Context
+#### Context
 
 Kent Homes is the largest homebuilder in Atlantic Canada. For over 50 years, Kent has been offering homebuyers’ quality modular homes in a safe year-round building environment.
 
-### Challenge
+#### Challenge
 
 Map the customers journey and simplify the purchase process. Provide Irvings’ in-house development team with easy to follow design templates for the website redesign.
 
-### Process
+#### Process
 
 Initially, Kent Homes wanted an infographic and few updated page layouts that their in-house web development team could develop into templates, however, after an in-depth briefing on the project it was clear that their website functioned as crucial component of their customer experience, therefore requiring careful consideration and ultimately a complete overhaul.
 

@@ -12,15 +12,15 @@ sidebarMedia:
 
 >It’s not “eye catching” or “on trend”, but this rebranding project is one of my favourite portfolio pieces. The research I conducted revealed powerful insights which shaped every aspect of the final design.
 
-### Context
+#### Context
 
 FSEAP is a national provider of employee and family assistance programs, wellness solutions and organisational consulting. They have a profound commitment to providing services that have a meaningful impact on the lives of Canadian employees and families. All proceeds go to support local community programs.
 
-### Challenge
+#### Challenge
 
 To navigate design direction with an organisational committee which represented over 40 branches across Canada. Each branch had a unique cultural perspective and different idea of how to communicate with clients.
 
-### Process
+#### Process
 
 To better understand the organization and their internal challenges I designed a brand audit. I conducted informal telephone interviews with employees from all regions, and wrote a survey that was emailed to current and former clients.
 

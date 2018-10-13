@@ -4,11 +4,10 @@
 <body>
   {% include header.html %}
   <div class="page portfolioroot-page">
-    {% for portfolio_item in site.portfolio_items %}
-      <a href={{ portfolio_item.url }}>
-        <img src={{ portfolio_item.thumbnail }} alt={{ portfolio.title }} />
-        <h3>{{ portfolio_item.title }}</h3>
-      </a>
-    {% endfor %}
+    <div class="portfolio-grid">
+      {% for portfolio_item in site.portfolio_items %}
+        {% include portfolio-grid-item.html item=portfolio_item %}
+      {% endfor %}
+    </div>
   </div>
 </body>

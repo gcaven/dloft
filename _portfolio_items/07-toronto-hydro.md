@@ -12,16 +12,16 @@ sidebarMedia:
 
 >Nothing says conservation better than talking animals!
 
-### Context
+#### Context
 
 Toronto Hydro promotes saveONenergy programs that offer residential customers incentives to conserve and reduce electricity.
 
-### Challenge
+#### Challenge
 
 Craft and execute a campaign that increases participation in residential energy conservation programs.
 
 
-### Process
+#### Process
 
 Toronto is a very crowded space when it comes to out of home marketing. Billboards are on every corner, and let's face it, energy conservation isn’t very sexy. This campaign had a healthy budget and if positioned correctly had the potential to affect real change.
 

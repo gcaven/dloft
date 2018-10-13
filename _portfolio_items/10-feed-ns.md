@@ -12,15 +12,15 @@ sidebarMedia:
 
 >As part of Trampolines’ mission to be a force for positive change in Nova Scotia the studio collaborated in redesigning Feed Nova Scotia’s website pro-bono.
 
-### Context
+#### Context
 
 Feed Nova Scotia is a non-for-profit organization with a member network of 146 food banks and meal programs that distribute food across the province. Their mission is to feed those in need and reduce that need.
 
-### Challenge
+#### Challenge
 
 Design a responsive WordPress site and infographics for Feed Nova Scotia.
 
-### Process
+#### Process
 
 When I was briefed on this project the development team had already produced wireframes and I was tasked with designing the layout and interface, however as I worked through crafting the grid and navigation system I found issues with accessibility and navigation. I worked with the development team to elevate accessibility standards and to simplify content and navigation.
 

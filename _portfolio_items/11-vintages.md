@@ -13,15 +13,15 @@ sidebarMedia:
 
 > What’s in a name? In this case a whole lot.
 
-### Context
+#### Context
 
 Vintages of The Mind is a fundraising event for the Nova Scotia Early Psychosis Program (NSEPP). NSEPP promotes early detection and provides optimal healthcare for persons either experiencing (or at-risk for) their first episode of psychosis.
 
-### Challenge
+#### Challenge
 
 Design collateral for a wine tasting/silent auction fundraiser. And oh ya, you have three hours allotted for design.
 
-### Process
+#### Process
 
 Normally three hours wouldn’t be enough time to design anything worth putting in your portfolio, but something about the name and subject of this event inspired me.
 

@@ -23,6 +23,7 @@ $primaryFont: 'Roboto';
 $primaryFontLight: 'Roboto Light';
 $primaryFontSize: 1em;
 $transition-time: 150ms;
+$gutter-size: 100px;
 
 body {
   width: 100vw;
@@ -31,7 +32,6 @@ body {
   color: white;
   font-family: $primaryFont;
   font-size: $primaryFontSize;
-  padding: 0px 100px;
   margin: 0;
 
   --red: #de1e51;
@@ -62,14 +62,13 @@ h4 {
 }
 
 .site-header {
-  width: 100%;
+  width: calc(100% - 200px);
   height: 165px;
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 0;
+  margin: 0 $gutter-size 25px;
   border-bottom: 6px solid white;
-  margin-bottom: 25px;
 
   &__navList {
     height: 100%;
@@ -112,42 +111,156 @@ h4 {
 .page {
   width: 100%;
   overflow: hidden;
-  padding: 0 0 50px;
+  padding: 0 $gutter-size 50px;
 
   video {
     width: 100%;
   }
+
+  &.portfolioitem-page {
+    padding: 0 0 50px;
+  }
+}
+
+.portfolio-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  a {
+    width: calc(33.33% - 16.67px);
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: white;
+    img {
+      width: 100%;
+    }
+  }
+
+  h4 {
+    margin: 25px 0 10px;
+  }
+
+  h3 {
+    margin: 0;
+  }
 }
 
 .home-page {
+
   &__hero {
     margin-bottom: 50px;
   }
-  &__featured {
-    a {
-      width: calc(33.33% - 16.67px);
-      text-decoration: none;
-      color: white;
-      img {
-        width: 100%;
+}
+
+.about-page {
+  margin-top: 50px;
+
+  &__quickfacts {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+      height: 135px;
+      width: 135px;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+
+    &-stack {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: 25px;
+
+      span {
+        margin-bottom: 10px;
+      }
+
+      small {
+        margin-left: 5px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:last-child {
+        margin-top: 20px;
+        color: var(--yellow);
       }
     }
-    h4 {
-      margin: 25px 0 10px;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    article {
+      flex-basis: 50%;
+      flex-shrink: 1;
+
+      blockquote {
+        font-size: 20px;
+        margin: 75px 0 20px;
+      }
+
+      p {
+        margin: 14px 0px;
+      }
     }
-    h3 {
-      margin: 0;
+
+    aside {
+      flex-basis: 50%;
+      flex-grow: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+  }
+
+  footer {
+    width: 100%;
+    border-top: 1px solid #808080;
+    color: #808080;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 25px 0;
+    margin-top: 50px;
+
+    img {
+      width: 200px;
+      flex-grow: 0;
+      position: relative;
+      left: -37px;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    strong {
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
   }
 }
 
 .play-page {
+
   &__hero {
     margin-bottom: 50px;
   }
+
   &__experiments {
     display: flex;
     justify-content: flex-start;
@@ -155,10 +268,12 @@ h4 {
     flex-wrap: wrap;
     margin: 0 -25px -25px 0;
   }
+
   &__experiment-tile-container {
     width: calc(33.333% - 25px);
     margin: 0 25px 25px 0;
   }
+
   &__experiment-tile {
     h4 {
       color: var(--fuschia);
@@ -166,9 +281,70 @@ h4 {
     }
     cursor: pointer;
   }
+
   &__experiment-lightbox-content {
     width: 0px;
     height: 0px;
     overflow: hidden;
+  }
+}
+
+.portfolioitem-page {
+  background-color: white;
+  color: black;
+
+  &__header {
+    width: 100%;
+    height: 275px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 25px;
+    left: $gutter-size;
+    margin: 0;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  &__content {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    article {
+      flex-basis: 33.33%;
+      flex-shrink: 0;
+
+      blockquote {
+        font-size: 22px;
+        margin: 25px 0 14px;
+      }
+
+      h4 {
+        font-size: 18px;
+        margin: 28px 0 14px;
+        letter-spacing: 0.5px;
+      }
+
+      p {
+        margin: 14px 0px;
+      }
+    }
+
+    aside {
+      flex-basis: 66.67%;
+      flex-grow: 0;
+      padding: 25px 0 0 50px;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }

@@ -12,15 +12,15 @@ sidebarMedia:
 
 > These System Performance Reports may look simple enough, but they took a lot of critical thinking and planning to get right.
 
-### Context
+#### Context
 
 The Partnership works with groups and agencies across Canada to reduce the impact of cancer on all Canadians.
 
-### Challenge
+#### Challenge
 
 Design templates for a series of reports relaying complex information and then to produce the first set of reports in French, English and accessible PDF versions.
 
-### Process
+#### Process
 
 I needed to carefully craft a grid and typographic system that would align and differentiate three categories of reporting; Technical, Narrative and Special Study. The information in these reports were communicated through case studies, complex charts and figures, callouts, statistics and references.
 

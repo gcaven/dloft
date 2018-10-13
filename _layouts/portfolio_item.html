@@ -3,19 +3,37 @@
 {% include head.html %}
 <body>
   {% include header.html %}
-  <div class="page portfolioitem-page">
-    <img src={{page.headerImage}}/>
-    {{ page.title }}/{{ page.type }}
-    <article>{{ page.content | markdownify }}</article>
-    <aside>
-      {% for video in page.sidebarMedia.videos %}
-        <video poster={{video.thumbnail}} controls>
-          <source src={{video.file}} type="video/mp4">
-        </video>
-      {% endfor %}
-      {% for image in page.sidebarMedia.images %}
-        <img src={{image}}></img>
-      {% endfor %}
-    </aside>
+  <div class="page portfolioitem-page portfolio-item-{{page.slug}}">
+    <div
+      class="portfolioitem-page__header"
+      style="background-image: url({{page.headerImage}})"
+    >
+      <h3
+        class="portfolioitem-page__title"
+      >
+        {{ page.title }} /
+        <span style="color: var({{ page.accentColor }})">
+          {{ page.type }}
+        </span>
+      </h3>
+    </div>
+    <div class="portfolioitem-page__content">
+      <article>{{ page.content | markdownify }}</article>
+      <aside>
+        {% for video in page.sidebarMedia.videos %}
+          <video poster={{video.thumbnail}} controls>
+            <source src={{video.file}} type="video/mp4">
+          </video>
+        {% endfor %}
+        {% for image in page.sidebarMedia.images %}
+          <img src={{image}}></img>
+        {% endfor %}
+      </aside>
+    </div>
   </div>
+  <style>
+    .portfolio-item-{{ page.slug }} h4 {
+      color: var({{ page.accentColor }});
+    }
+  </style>
 </body>

@@ -12,15 +12,15 @@ sidebarMedia:
 
 >New website celebrating geek and nerd culture – zero budget — one week. Challenge accepted.
 
-### Context
+#### Context
 
 Every year since 2010 this community-focused, volunteer run sci-fi, fantasy and gaming convention strives to be Canada’s best fan-run “comic con” style convention.
 
-### Challenge
+#### Challenge
 
 Redesign the website for Hal-Con with a focus on improving guests experiences and attracting new visitors from outside the province.
 
-### Process
+#### Process
 
 With only a week in the budget for design, whatever choices I made had to be smart and based on relevant information. I executed a comparative analysis of comic-con style conventions across North America. I looked for best practices in content, navigation, and accessibility and made recommendations based on my findings.
 

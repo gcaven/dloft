@@ -15,15 +15,15 @@ sidebarMedia:
 
 >The Proclamation of the Constitution Act of 1982 marked a pivotal moment for human rights in Canada, it was my honour to help bring this story to life.
 
-### Context
+#### Context
 
 The Canadian Museum for Human Rights (CMHR) is the first museum solely dedicated to the evolution, celebration, and future of human rights. Their aim is to build not only a national hub for human rights learning and discovery, but a new era of global human rights leadership.
 
-### Challenge
+#### Challenge
 
 Design an augmented reality app that tells the story of human rights legislation in Canada. The app will be used as an exhibit in the museum, and will later be available on the Apple App Store.
 
-### Process
+#### Process
 
 This project has been a joy to work on. Though still in development, I am very proud of it’s progress. When we began the client had only a script, and an idea that they could leverage technology to create a compelling exhibit.
 

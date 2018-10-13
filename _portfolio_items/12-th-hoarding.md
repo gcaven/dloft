@@ -12,15 +12,15 @@ sidebarMedia:
 
 > The power to power Toronto.
 
-### Context
+#### Context
 
 In 2014 Toronto Hydro would complete the construction of a new transformer station 45 feet underground in Toronto's historic Roundhouse Park.
 
-### Challenge
+#### Challenge
 
 Conceal the construction of the transformer station which is situated in one of the most visible tourist areas in Toronto. Roundhouse Park is directly across from the CN Tower, Rogers Centre and Ripley's newly constructed Aquarium.
 
-### Process
+#### Process
 
 This project required a lot of planning and attention to detail. The first thing I tasked myself with was laying out the hoarding flat and dividing up the streets and corners. I built a fun angled grid on top of it and used colour as a way to transition from one section to the next.
 

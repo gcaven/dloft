@@ -10,15 +10,9 @@
       </video>
     </div>
     <h2>Featured Work</h2>
-    <div class="home-page__featured">
-      {% for item in site.portfolio_items limit:3 %}
-        <a href={{ item.url }}>
-          <img src={{ item.thumbnail }} alt={{ item.title }} />
-          <h4 style="color: var({{ item.accentColor }})">
-            {{ item.type }}
-          </h4>
-          <h3>{{ item.title }}</h3>
-        </a>
+    <div class="portfolio-grid">
+      {% for portfolio_item in site.portfolio_items limit:3 %}
+        {% include portfolio-grid-item.html item=portfolio_item %}
       {% endfor %}
     </div>
   </div>

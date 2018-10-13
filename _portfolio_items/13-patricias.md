@@ -12,15 +12,15 @@ sidebarMedia:
 
 >Beet the rush!
 
-### Context
+#### Context
 
 Patricia's Bistro serves lovingly prepared sandwiches, pastas, soups and salads made from scratch. Named for the Chef's mother, it provides patrons with a warm and inviting atmosphere and terrific food.
 
-### Challenge
+#### Challenge
 
 Create and execute an identity for a new restaurant in a very short timeframe. Scope of work included design and implementation of the business proposal, interior design, logo, flyers, signage, menus, website and social media graphics and posts.
 
-### Process
+#### Process
 
 With only weeks before opening the identity of Patricia's Bistro needed a system that would be easy to implement but flexible enough to grow.
 

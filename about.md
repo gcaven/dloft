@@ -3,6 +3,7 @@ layout: about
 title: About Me
 permalink: /about/
 sideImage: /img/infographic.png
+headshot: /img/headshot.jpg
 ---
 
 >I use Design Thinking and creative tools to humanize communication and technology. I am passionate about process, context and crafting meaningful experiences. I love working in collaborative environments—especially, if the people I'm working with are in love with what they do.

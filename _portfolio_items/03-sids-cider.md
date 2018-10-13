@@ -15,15 +15,15 @@ sidebarMedia:
 
 >Great product. Horrible name. In the competitive market of alcoholic beverages, name recognition is half the battle. How do you design a new line of beverages and NOT focus on the name? Let your customers see themselves in your brand.
 
-### Context
+#### Context
 
 Sid’s Cider is a new product-line in the Shipbuilder’s Cider family. It has a style that offers a smooth mouth filling texture, lots of juicy fruit flavour and no additives.
 
-### Challenge
+#### Challenge
 
 Create a compelling story and unique packaging experience in a crowded market place.
 
-### Process
+#### Process
 
 To understand what we were up against I conducted a competitive analysis. I looked for design trends, language, story elements and quality claims. Analysis revealed that most cider brands skewed male, no brand talked about an origin story and the majority of cider labels were modestly designed (there were no risk takers). Additionally, no brand put an emphasis on quality or craftsmanship. This is important because analysis of NSLC sales showed craft brews are their number area of growth.
 
