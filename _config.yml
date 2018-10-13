@@ -19,6 +19,7 @@ collections:
     output: true
 
 # Build settings
+github: [metadata]
 markdown: kramdown
 sass:
   sass_dir: css
