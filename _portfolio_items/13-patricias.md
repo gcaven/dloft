@@ -23,8 +23,8 @@ Create and execute an identity for a new restaurant in a very short timeframe. S
 
 #### Process
 
-With only weeks before opening the identity of Patricia's Bistro needed a system that would be easy to implement but flexible enough to grow.
+With only weeks before opening the identity of Patricia's Bistro needed a system that would be easy to implement and flexible enough to grow.
 
-Vintage inspired typography; colour palette and simple shapes can be used in limitless combinations. In the beginning, typographic posters using food puns were to be displayed as large-scale posters to brighten the trendy black walls, but soon provided to be a source of inspiration and a voice for social media and promotional messaging, "Beet the Rush! Call your office lunch orders in".
+Vintage inspired typography; bright colour palette and simple shapes could be used in limitless combinations. In the beginning, typographic posters using food puns were to be displayed as large-scale posters to brighten the trendy black walls, but soon provided to be a source of inspiration and a voice for social media promotion, "Beet the Rush! Call your office lunch orders in".
 
-The result is colourful and quirky with a nod towards nostalgia, truly, a unique addition to the food landscape in Bedford.
+The result is colourful and quirky with a nod towards nostalgia—truly, a unique addition to the food landscape in Bedford.

@@ -30,7 +30,7 @@ This project has been a joy to work on. Though still in development, I am very p
 
 My first task was figuring out how to tell the four stories the museum outlined. I examined many augmented reality applications and consulted the development team to ensure my concepts were realistic for both the timeframe and budget of the project.
 
-I ideated four concepts and presented them to the client, the Avatar direction was chosen and the work began. I created detailed wireframes, and through an iterative process with the development team we refined the menus and interactive elements. I also conducted research for accessibility and made recommendations to the development team based on best practices and commonly understood gestures for the visually impaired.
+I ideated four concepts and presented them to the client, the Avatar direction was chosen and the work began. I created detailed wireframes, and through an iterative process with the development team we refined the menus and interactive elements. I also conducted research for accessibility and made recommendations based on best practices and commonly understood gestures for the visually impaired.
 
 When the wireframes were complete my next task was to produce detailed storyboards, including sound design. I illustrated and animated story features, and wrote an art direction brief for the 3D artist.
 

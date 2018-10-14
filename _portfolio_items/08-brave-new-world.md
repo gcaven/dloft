@@ -22,4 +22,4 @@ Brave New World is a boutique digital/technology agency that works on a wide var
 
 #### Buk Promotion Video
 
-Buk is a social food discovery platform. It uses machine learning to find and recommend restaurants and dishes in any city around the world. Brave New World needed a short video to send to investors that explained the apps capabilities.
+Buk is a social food discovery platform. It uses machine learning to find and recommend restaurants and your favourite dishes in any city around the world. Brave New World needed a short video to send to investors that explained the app's capabilities.

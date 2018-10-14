@@ -23,7 +23,8 @@ Conceal the construction of the transformer station which is situated in one of 
 
 #### Process
 
-This project required a lot of planning and attention to detail. The first thing I tasked myself with was laying out the hoarding flat and dividing up the streets and corners. I built a fun angled grid on top of it and used colour as a way to transition from one section to the next.
+This project required a lot of planning and attention to detail. The first thing I tasked myself with was laying out the hoarding flat and dividing up the streets and corners. I built a flexible grid on top of it and used colour as a way to transition from one section to the next.
 
-The location served as inspiration for the theme, “The Power to Power Toronto” fit perfectly with the hoardings surroundings. I used this theme as a way to tell the story of Toronto and Toronto Hydro’s commitment to contributing in a positive way.
- Another consideration in the design strategy is that hoarding needs to look busy enough to conceal graffiti, the collage style did not leave any white space to be taken advantage of.
+The location served as inspiration for the theme, “The Power to Power Toronto” fit perfectly with the hoardings surroundings. I used this theme as a way to tell the story of Toronto and Toronto Hydro’s commitment to contributing to city growth in a positive way.
+
+ Another consideration in this design strategy is that hoarding needs to look busy enough to conceal graffiti, the collage style did not leave any white space to be taken advantage of.
