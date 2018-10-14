@@ -13,7 +13,7 @@
     <div class="portfolio-grid">
       {% for featured in page.featured_portfolio_items %}
         {% assign item = site.portfolio_items | where:"slug", featured | first %}
-        {% include portfolio-grid-item.html item=item override-width="calc(33.33% - 16.67px)" %}
+        {% include portfolio-grid-item.html item=item override-width="calc(33.33% - 25px)" %}
       {% endfor %}
     </div>
   </div>

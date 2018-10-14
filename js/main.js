@@ -14,7 +14,7 @@ function initPage() {
   const players = Plyr.setup(
     document.querySelectorAll('video'),
     {
-      controls: ['play-large']
+      controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png"/><span class="plyr__sr-only">Play</span></button>`
     }
   );
 }

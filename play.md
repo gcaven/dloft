@@ -10,7 +10,7 @@ experiments:
     thumbnail: /img/thumbs/JoyofPlay-thumb.jpg
     videos:
       - file: /video/joy.mp4
-        thumbnail: /video/joy-thumb.jpg
+        thumbnail-big: /video/joy-thumb.jpg
   - title: Sketchbook
     thumbnail: /img/thumbs/Sketchbook-thumb.jpg
     images:
