@@ -12,24 +12,72 @@
     <h2>Experiments and Side Projects</h2>
     <div class="play-page__experiments">
       {% for item in page.experiments %}
-        <div class="play-page__experiment-tile-container">
+        <div class="play-page__experiment-tile-container" id="experiment_{{ forloop.index }}">
           <div class="play-page__experiment-tile">
             <img src={{ item.thumbnail }}>
             <h4>{{ item.title }}</h4>
-          </div>
-          <div class="play-page__experiment-lightbox-content">
-            {% if item.video != null %}
-              <video poster={{ item.video.thumbnail }}>
-                <source src={{ item.video.file }} type="video/mp4">
-              </video>
-            {% else %}
-              {% for image in item.images %}
-                <img src={{ image }}>
-              {% endfor %}
-            {% endif %}
           </div>
         </div>
       {% endfor %}
     </div>
   </div>
+  {% include photoswipe.html %}
+  <script>
+
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    var options = {
+      index: 0,
+      bgOpacity: 0.75,
+      history: false,
+      shareButtons: [],
+      closeOnScroll: false,
+    };
+
+    function pauseVideo() {
+      var videos = document.querySelectorAll('video');
+      var i = 0;
+      for (i = 0; i < videos.length; ++i) {
+        videos[i].pause();
+      }
+    }
+
+    {% for item in page.experiments %}
+      var items_{{forloop.index}} = [
+        {% for vid in item.videos  %}
+          {
+            html: "<div class=\"pswp__video\"><video poster=\"{{ vid.thumbnail }}\" controls> <source src=\"{{ vid.file }}\" type=\"video/mp4\"></video></div>"
+          },
+        {% endfor %}
+        {% for img in item.images %}
+          {
+            src: '{{ img.file }}',
+            w: {{ img.width }},
+            h: {{ img.height }}
+          },
+        {% endfor %}
+      ]
+
+      function openGallery_{{forloop.index}}() {
+        pauseVideo();
+        var gallery_{{forloop.index}} = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          items_{{forloop.index}},
+          options
+        );
+        gallery_{{forloop.index}}.listen('close', function () {
+          pauseVideo();
+        });
+        gallery_{{forloop.index}}.listen('beforeChange', function () {
+          pauseVideo();
+        });
+        gallery_{{forloop.index}}.init();
+        Plyr.setup(pswpElement.querySelectorAll('video'), {controls: ['play-large']});
+        console.log('opening gallery {{forloop.index}}')
+      }
+
+      document.getElementById('experiment_{{forloop.index}}').addEventListener('click', openGallery_{{forloop.index}});
+
+    {% endfor %}
+  </script>
 </body>
