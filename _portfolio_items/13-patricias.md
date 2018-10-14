@@ -2,7 +2,8 @@
 layout: portfolio_item
 title: Patricia's Bistro
 type: identity
-accentColor: --green
+filterType: identity
+accentColor: --fuschia
 thumbnail: /img/thumbs/Patricias-thumb.jpg
 headerImage: /img/portfolio/Patricias-header.jpg
 sidebarMedia:

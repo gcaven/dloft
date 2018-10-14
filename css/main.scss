@@ -242,12 +242,14 @@ h4 {
 
 .portfolio-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  margin: 0 -25px 0 0;
 
-  a {
-    width: calc(33.33% - 16.67px);
+  &__item {
+    width: calc(33.33% - 25px);
+    margin-right: 25px;
     margin-bottom: 50px;
     text-decoration: none;
     color: white;
@@ -256,8 +258,12 @@ h4 {
       width: 100%;
     }
 
+    &.hidden {
+      display: none;
+    }
+
     @include breakpoint(tablet) {
-      width: calc(50% - 12.5px);
+      width: calc(50% - 25px);
     }
 
     @include breakpoint(phone) {
@@ -457,6 +463,39 @@ h4 {
     width: 0px;
     height: 0px;
     overflow: hidden;
+  }
+}
+
+.portfolioroot-page {
+
+  &__filter {
+    font-size: 18px;
+    margin: 25px 0 50px;
+    line-height: 25px;
+  }
+
+  &__filter-button {
+
+    // &.active {
+    //   font-weight: bold;
+    // }
+
+    &.communication {
+      color: var(--green);
+    }
+
+    &.digital {
+      color: var(--cyan);
+    }
+
+    &.identity {
+      color: var(--fuschia);
+    }
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 }
 

@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: FSEAP
 type: identity
+filterType: identity
 accentColor: --fuschia
 thumbnail: /img/thumbs/FSEAP-thumb.jpg
 headerImage: /img/portfolio/fseap-header.jpg

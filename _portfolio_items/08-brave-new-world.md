@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: Brave New World
 type: promotion
+filterType: communication
 accentColor: --green
 thumbnail: /img/thumbs/BNW-thumb.jpg
 headerImage: /img/portfolio/BNW-header.jpg

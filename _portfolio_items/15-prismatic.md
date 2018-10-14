@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: Prismatic Arts Festival
 type: identity
+filterType: identity
 accentColor: --fuschia
 thumbnail: /img/thumbs/Prismatic-thumb.jpg
 headerImage: /img/portfolio/Prismatic-header.jpg

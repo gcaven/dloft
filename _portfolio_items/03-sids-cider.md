@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: Sid's Cider
 type: identity
+filterType: identity
 accentColor: --fuschia
 thumbnail: /img/thumbs/Sids-thumb.jpg
 headerImage: /img/portfolio/SidsCider-header.jpg

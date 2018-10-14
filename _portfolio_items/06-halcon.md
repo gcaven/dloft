@@ -2,7 +2,8 @@
 layout: portfolio_item
 title: Hal-Con
 type: web design
-accentColor: --green
+filterType: digital
+accentColor: --cyan
 thumbnail: /img/thumbs/HalCon-thumb.jpg
 headerImage: /img/portfolio/HalCon-header.jpg
 sidebarMedia:

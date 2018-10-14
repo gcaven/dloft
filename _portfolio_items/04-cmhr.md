@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: Museum for Human Rights
 type: augmented reality app
+filterType: digital
 accentColor: --cyan
 thumbnail: /img/thumbs/CMHR-thumb.jpg
 headerImage: /img/portfolio/CMHR-header.jpg

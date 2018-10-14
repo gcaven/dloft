@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: Various Publications
 type: editorial
+filterType: communication
 accentColor: --green
 thumbnail: /img/thumbs/Editorial-thumb.jpg
 headerImage: /img/portfolio/Editorial-header.jpg

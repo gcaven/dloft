@@ -4,10 +4,29 @@
 <body>
   {% include header.html %}
   <div class="page portfolioroot-page">
+    <div class="portfolioroot-page__filter">
+      <span>Sort by /</span>
+      <span class="portfolioroot-page__filter-button communication">
+        communication
+      </span>
+      <span>/</span>
+      <span class="portfolioroot-page__filter-button digital">
+        digital
+      </span>
+      <span>/</span>
+      <span class="portfolioroot-page__filter-button identity">
+        identity
+      </span>
+      <span>/</span>
+      <span class="portfolioroot-page__filter-button all">
+        all
+      </span>
+    </div>
     <div class="portfolio-grid">
       {% for portfolio_item in site.portfolio_items %}
         {% include portfolio-grid-item.html item=portfolio_item %}
       {% endfor %}
     </div>
   </div>
+  <script src="{{ '/js/portfolio.js' | prepend: site.baseurl }}"></script>
 </body>

@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: Kent Homes
 type: web design
+filterType: digital
 accentColor: --cyan
 thumbnail: /img/thumbs/Kent-thumb.jpg
 headerImage: /img/portfolio/KentHomes-header.jpg

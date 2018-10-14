@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: Vintages of the Mind
 type: identity
+filterType: identity
 accentColor: --fuschia
 thumbnail: /img/thumbs/Vintages-thumb.jpg
 headerImage: /img/portfolio/Vintages-header.jpg

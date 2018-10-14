@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: Toronto Hydro
 type: campaign
+filterType: communication
 accentColor: --green
 thumbnail: /img/thumbs/TorontoHydro-thumb.jpg
 headerImage: /img/portfolio/TorontoHydro-header.jpg

@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: Various Logos
 type: identity
+filterType: identity
 accentColor: --fuschia
 thumbnail: /img/thumbs/Logos-thumb.jpg
 headerImage: /img/portfolio/Logos-header.jpg

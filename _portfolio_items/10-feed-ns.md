@@ -2,6 +2,7 @@
 layout: portfolio_item
 title: Feed Nova Scotia
 type: web design
+filterType: digital
 accentColor: --cyan
 thumbnail: /img/thumbs/FeedNS-thumb.jpg
 headerImage: /img/portfolio/FeedNS-header.jpg
