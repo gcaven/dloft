@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Joy of Play | Deanne Loft</title>
+  <meta name="description" content="Portfolio Site for Deanne Loft (www.deanneloft.com)">
+
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Photoswipe stuff -->
+  <link rel="stylesheet" href="/css/photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="/css/photoswipe/default-skin/default-skin.css">
+  <script src="/js/photoswipe/photoswipe.min.js"></script>
+  <script src="/js/photoswipe/photoswipe-ui-default.min.js"></script>
+
+  <!-- Plyr stuff -->
+  <script src="https://cdn.plyr.io/3.4.4/plyr.polyfilled.js"></script>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.4.4/plyr.css">
+
+  <!-- Dloft Stuff -->
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/main.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+  <div class="site-header__menu">
+    <a class="site-header__menu-item" href="/about">Hi. I'm Dee</a>
+    <a class="site-header__menu-item" href="/play">The joy of play</a>
+    <a class="site-header__menu-item" href="/portfolio">Portfolio</a>
+  </div>
+  <div class="site-header__mobile-toggle">
+    <div class="burger-top"></div>
+    <div class="burger-mid"></div>
+    <div class="burger-btm"></div>
+  </div>
+  <a class="site-header__logo" href="/">
+    <img
+      src="/img/logo.svg"
+      alt="Deanne Loft, RGD"
+    >
+  </a>
+</header>
+
+  <div class="page play-page">
+    <div class="play-page__hero">
+      <video poster=/video/Showreel-thumb.jpg controls>
+        <source src=/video/Showreel.mp4 type="video/mp4">
+      </video>
+    </div>
+    <h2>Experiments and Side Projects</h2>
+    <div class="play-page__experiments">
+      
+        <div class="play-page__experiment-tile-container" id="experiment_1">
+          <div class="play-page__experiment-tile">
+            <img src=/img/thumbs/JoyofPlay-thumb.jpg>
+            <h4>Motion / The Joy of Play</h4>
+          </div>
+        </div>
+      
+        <div class="play-page__experiment-tile-container" id="experiment_2">
+          <div class="play-page__experiment-tile">
+            <img src=/img/thumbs/Sketchbook-thumb.jpg>
+            <h4>Sketchbook</h4>
+          </div>
+        </div>
+      
+        <div class="play-page__experiment-tile-container" id="experiment_3">
+          <div class="play-page__experiment-tile">
+            <img src=/img/thumbs/Lightbox-thumb.jpg>
+            <h4>Lightboxes</h4>
+          </div>
+        </div>
+      
+        <div class="play-page__experiment-tile-container" id="experiment_4">
+          <div class="play-page__experiment-tile">
+            <img src=/img/thumbs/FarmCountryRun-thumb.jpg>
+            <h4>Farm Country Fun</h4>
+          </div>
+        </div>
+      
+        <div class="play-page__experiment-tile-container" id="experiment_5">
+          <div class="play-page__experiment-tile">
+            <img src=/img/thumbs/LunenburgFest-thumb.jpg>
+            <h4>Folk Harbour Fest</h4>
+          </div>
+        </div>
+      
+        <div class="play-page__experiment-tile-container" id="experiment_6">
+          <div class="play-page__experiment-tile">
+            <img src=/img/thumbs/Photography-thumb.jpg>
+            <h4>Live Show Photography</h4>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+  <!-- MUST BE INCLUDED ON ANY LAYOUT THAT WANTS A LIGHTBOX -->
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+  <script>
+
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+    var options = {
+      index: 0,
+      bgOpacity: 0.75,
+      history: false,
+      shareButtons: [],
+      closeOnScroll: false,
+    };
+
+    function pauseVideo() {
+      var videos = document.querySelectorAll('video');
+      var i = 0;
+      for (i = 0; i < videos.length; ++i) {
+        videos[i].pause();
+      }
+    }
+
+    
+      var items_1 = [
+        
+          {
+            html: "<div class=\"pswp__video\"><video poster=\"/video/joy-thumb.jpg\" controls> <source src=\"/video/joy.mp4\" type=\"video/mp4\"></video></div>"
+          },
+        
+        
+      ]
+
+      function openGallery_1() {
+        pauseVideo();
+        var gallery_1 = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          items_1,
+          options
+        );
+        gallery_1.listen('close', function () {
+          pauseVideo();
+        });
+        gallery_1.listen('beforeChange', function () {
+          pauseVideo();
+        });
+        gallery_1.init();
+        Plyr.setup(pswpElement.querySelectorAll('video'), {controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png"/><span class="plyr__sr-only">Play</span></button>`});
+        console.log('opening gallery 1')
+      }
+
+      document.getElementById('experiment_1').addEventListener('click', openGallery_1);
+
+    
+      var items_2 = [
+        
+        
+          {
+            src: '/img/play/sketchbook/Camel.jpg',
+            w: 1680,
+            h: 1050
+          },
+        
+          {
+            src: '/img/play/sketchbook/Coy.jpg',
+            w: 630,
+            h: 720
+          },
+        
+          {
+            src: '/img/play/sketchbook/Doodle.jpg',
+            w: 605,
+            h: 605
+          },
+        
+          {
+            src: '/img/play/sketchbook/Eyes.jpg',
+            w: 1680,
+            h: 1050
+          },
+        
+          {
+            src: '/img/play/sketchbook/QuestLove.jpg',
+            w: 604,
+            h: 453
+          },
+        
+          {
+            src: '/img/play/sketchbook/WalkThisWay.jpg',
+            w: 466,
+            h: 720
+          },
+        
+          {
+            src: '/img/play/sketchbook/Whale.jpg',
+            w: 960,
+            h: 467
+          },
+        
+          {
+            src: '/img/play/sketchbook/WildThings.jpg',
+            w: 591,
+            h: 1050
+          },
+        
+      ]
+
+      function openGallery_2() {
+        pauseVideo();
+        var gallery_2 = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          items_2,
+          options
+        );
+        gallery_2.listen('close', function () {
+          pauseVideo();
+        });
+        gallery_2.listen('beforeChange', function () {
+          pauseVideo();
+        });
+        gallery_2.init();
+        Plyr.setup(pswpElement.querySelectorAll('video'), {controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png"/><span class="plyr__sr-only">Play</span></button>`});
+        console.log('opening gallery 2')
+      }
+
+      document.getElementById('experiment_2').addEventListener('click', openGallery_2);
+
+    
+      var items_3 = [
+        
+        
+          {
+            src: '/img/play/lightboxes/fairy-1.jpg',
+            w: 1920,
+            h: 1311
+          },
+        
+          {
+            src: '/img/play/lightboxes/fairy-2.jpg',
+            w: 1920,
+            h: 1080
+          },
+        
+          {
+            src: '/img/play/lightboxes/Hobbit-1.jpg',
+            w: 611,
+            h: 1080
+          },
+        
+          {
+            src: '/img/play/lightboxes/ToyFactory-1.jpg',
+            w: 960,
+            h: 618
+          },
+        
+          {
+            src: '/img/play/lightboxes/ToyFactory-2.jpg',
+            w: 1920,
+            h: 1440
+          },
+        
+      ]
+
+      function openGallery_3() {
+        pauseVideo();
+        var gallery_3 = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          items_3,
+          options
+        );
+        gallery_3.listen('close', function () {
+          pauseVideo();
+        });
+        gallery_3.listen('beforeChange', function () {
+          pauseVideo();
+        });
+        gallery_3.init();
+        Plyr.setup(pswpElement.querySelectorAll('video'), {controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png"/><span class="plyr__sr-only">Play</span></button>`});
+        console.log('opening gallery 3')
+      }
+
+      document.getElementById('experiment_3').addEventListener('click', openGallery_3);
+
+    
+      var items_4 = [
+        
+        
+          {
+            src: '/img/play/farmcountry/farm-1.gif',
+            w: 1250,
+            h: 656
+          },
+        
+          {
+            src: '/img/play/farmcountry/farm-2.gif',
+            w: 883,
+            h: 1364
+          },
+        
+      ]
+
+      function openGallery_4() {
+        pauseVideo();
+        var gallery_4 = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          items_4,
+          options
+        );
+        gallery_4.listen('close', function () {
+          pauseVideo();
+        });
+        gallery_4.listen('beforeChange', function () {
+          pauseVideo();
+        });
+        gallery_4.init();
+        Plyr.setup(pswpElement.querySelectorAll('video'), {controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png"/><span class="plyr__sr-only">Play</span></button>`});
+        console.log('opening gallery 4')
+      }
+
+      document.getElementById('experiment_4').addEventListener('click', openGallery_4);
+
+    
+      var items_5 = [
+        
+        
+          {
+            src: '/img/play/folkharbour/FolkFest-1.jpg',
+            w: 1364,
+            h: 1765
+          },
+        
+          {
+            src: '/img/play/folkharbour/FolkFest-2.jpg',
+            w: 1364,
+            h: 2213
+          },
+        
+          {
+            src: '/img/play/folkharbour/FolkFest-3.jpg',
+            w: 1364,
+            h: 792
+          },
+        
+      ]
+
+      function openGallery_5() {
+        pauseVideo();
+        var gallery_5 = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          items_5,
+          options
+        );
+        gallery_5.listen('close', function () {
+          pauseVideo();
+        });
+        gallery_5.listen('beforeChange', function () {
+          pauseVideo();
+        });
+        gallery_5.init();
+        Plyr.setup(pswpElement.querySelectorAll('video'), {controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png"/><span class="plyr__sr-only">Play</span></button>`});
+        console.log('opening gallery 5')
+      }
+
+      document.getElementById('experiment_5').addEventListener('click', openGallery_5);
+
+    
+      var items_6 = [
+        
+        
+          {
+            src: '/img/play/photography/AndrewBird.jpg',
+            w: 1920,
+            h: 1536
+          },
+        
+          {
+            src: '/img/play/photography/Awkward.jpg',
+            w: 1024,
+            h: 768
+          },
+        
+          {
+            src: '/img/play/photography/Beast.jpg',
+            w: 1024,
+            h: 768
+          },
+        
+          {
+            src: '/img/play/photography/Figurines.jpg',
+            w: 1024,
+            h: 768
+          },
+        
+          {
+            src: '/img/play/photography/GoogleBordello-1.jpg',
+            w: 1024,
+            h: 670
+          },
+        
+          {
+            src: '/img/play/photography/GoogleBordello-2.jpg',
+            w: 1024,
+            h: 652
+          },
+        
+          {
+            src: '/img/play/photography/HandsomFurs.jpg',
+            w: 1024,
+            h: 768
+          },
+        
+          {
+            src: '/img/play/photography/PlantsAndAnimals.jpg',
+            w: 1024,
+            h: 768
+          },
+        
+          {
+            src: '/img/play/photography/Ponys-1.jpg',
+            w: 1024,
+            h: 768
+          },
+        
+          {
+            src: '/img/play/photography/Ponys-2.jpg',
+            w: 1024,
+            h: 768
+          },
+        
+          {
+            src: '/img/play/photography/ProjectJenny.jpg',
+            w: 1024,
+            h: 768
+          },
+        
+          {
+            src: '/img/play/photography/Spoon.jpg',
+            w: 1024,
+            h: 768
+          },
+        
+      ]
+
+      function openGallery_6() {
+        pauseVideo();
+        var gallery_6 = new PhotoSwipe(
+          pswpElement,
+          PhotoSwipeUI_Default,
+          items_6,
+          options
+        );
+        gallery_6.listen('close', function () {
+          pauseVideo();
+        });
+        gallery_6.listen('beforeChange', function () {
+          pauseVideo();
+        });
+        gallery_6.init();
+        Plyr.setup(pswpElement.querySelectorAll('video'), {controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png"/><span class="plyr__sr-only">Play</span></button>`});
+        console.log('opening gallery 6')
+      }
+
+      document.getElementById('experiment_6').addEventListener('click', openGallery_6);
+
+    
+  </script>
+</body>
