@@ -18,6 +18,14 @@
       </h3>
     </div>
     <div class="portfolioitem-page__content">
+      <h3
+        class="portfolioitem-page__mobile-title"
+      >
+        {{ page.title }} /
+        <span style="color: var({{ page.accentColor }})">
+          {{ page.type }}
+        </span>
+      </h3>
       <article>{{ page.content | markdownify }}</article>
       <aside>
         {% for video in page.sidebarMedia.videos %}

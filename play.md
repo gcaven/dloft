@@ -32,7 +32,7 @@ experiments:
       - file: /img/play/sketchbook/WalkThisWay.jpg
         width: 466
         height: 720
-      - file: /img/play/sketchbook/Whale.
+      - file: /img/play/sketchbook/Whale.jpg
         width: 960
         height: 467
       - file: /img/play/sketchbook/WildThings.jpg
@@ -83,7 +83,7 @@ experiments:
       - file: /img/play/photography/AndrewBird.jpg
         width: 1920
         height: 1536
-      - file: /img/play/photography/Awkward!.jpg
+      - file: /img/play/photography/Awkward.jpg
         width: 1024
         height: 768
       - file: /img/play/photography/Beast.jpg

@@ -1,13 +1,18 @@
 <header class="site-header">
-  <div class="site-header__navList">
-    <a class="site-header__navItem" href="/about">Hi. I'm Dee</a>
-    <a class="site-header__navItem" href="/play">The joy of play</a>
-    <a class="site-header__navItem" href="/portfolio">Portfolio</a>
+  <div class="site-header__menu">
+    <a class="site-header__menu-item" href="/about">Hi. I'm Dee</a>
+    <a class="site-header__menu-item" href="/play">The joy of play</a>
+    <a class="site-header__menu-item" href="/portfolio">Portfolio</a>
   </div>
-    <a class="site-header__logo" href="/">
-      <img
-        src="{{ '/img/logo.svg' | prepend: site.baseurl }}"
-        alt="Deanne Loft, RGD"
-      >
-    </a>
+  <div class="site-header__mobile-toggle">
+    <div class="burger-top"></div>
+    <div class="burger-mid"></div>
+    <div class="burger-btm"></div>
+  </div>
+  <a class="site-header__logo" href="/">
+    <img
+      src="{{ '/img/logo.svg' | prepend: site.baseurl }}"
+      alt="Deanne Loft, RGD"
+    >
+  </a>
 </header>
