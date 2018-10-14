@@ -1,4 +1,8 @@
-<a href={{ include.item.url }}>
+{% if include.override-width != null %}
+  <a href={{ include.item.url }} style="width: {{ include.override-width }}">
+{% else %}
+  <a href={{ include.item.url }}>
+{% endif %}
   <img src={{ include.item.thumbnail }} alt={{ include.item.title }} />
   <h4 style="color: var({{ include.item.accentColor }})">
     {{ include.item.type }}

@@ -11,8 +11,9 @@
     </div>
     <h2>Featured Work</h2>
     <div class="portfolio-grid">
-      {% for portfolio_item in site.portfolio_items limit:3 %}
-        {% include portfolio-grid-item.html item=portfolio_item %}
+      {% for featured in page.featured_portfolio_items %}
+        {% assign item = site.portfolio_items | where:"slug", featured | first %}
+        {% include portfolio-grid-item.html item=item override-width="calc(33.33% - 16.67px)" %}
       {% endfor %}
     </div>
   </div>

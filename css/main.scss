@@ -19,27 +19,54 @@
        url('/font/roboto/roboto-v18-latin-300.woff') format('woff');
 }
 
-$primaryFont: 'Roboto';
-$primaryFontLight: 'Roboto Light';
-$primaryFontSize: 1em;
-$transition-time: 150ms;
-$gutter-size: 100px;
+@mixin breakpoint($class) {
+  @if $class == phone {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $class == tablet {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  } @else if $class == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else {
+    @warn 'Breakpoint mixin supports: phone, tablet, desktop';
+  }
+}
 
 body {
-  width: 100vw;
-  min-height: 100vh;
-  background-color: black;
-  color: white;
-  font-family: $primaryFont;
-  font-size: $primaryFontSize;
-  margin: 0;
 
+  --primaryFont: 'Roboto';
+  --primaryFontLight: 'Roboto Light';
+  --primaryFontSize: 1em;
+  --transition-time: 150ms;
+  --gutter-size: 100px;
   --red: #de1e51;
   --fuschia: #ec118f;
   --cyan: #00a1dd;
   --green: #00a651;
   --orange: #f36f21;
   --yellow: #cccc33;
+
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: var(--primaryFont);
+  font-size: var(--primaryFontSize);
+  margin: 0;
+
+  @include breakpoint(tablet) {
+    --gutter-size: 50px;
+  }
+
+  @include breakpoint(phone) {
+    --gutter-size: 25px;
+  }
+
 }
 
 body, body * {
@@ -62,12 +89,12 @@ h4 {
 }
 
 .site-header {
-  width: calc(100% - 200px);
+  width: calc(100% - calc(2 * var(--gutter-size)));
   height: 165px;
   display: flex;
   justify-content: space-between;
   padding: 25px 0;
-  margin: 0 $gutter-size 25px;
+  margin: 0 var(--gutter-size) 25px;
   border-bottom: 6px solid white;
 
   &__navList {
@@ -86,14 +113,14 @@ h4 {
     height: calc(33.333% - 5.33px);
     color: black;
     background-color: white;
-    transition: all $transition-time;
+    transition: all var(--transition-time);
     line-height: 1.3em;
     letter-spacing: 0.1em;
     margin-bottom: 8px;
     text-decoration: none;
     &:hover {
       color: white;
-      background-color: var(--cyan);
+      background-color: var(--yellow);
     }
     &:last-child {
       margin-bottom: 0px;
@@ -111,7 +138,7 @@ h4 {
 .page {
   width: 100%;
   overflow: hidden;
-  padding: 0 $gutter-size 50px;
+  padding: 0 var(--gutter-size) 50px;
 
   video {
     width: 100%;
@@ -133,8 +160,17 @@ h4 {
     margin-bottom: 50px;
     text-decoration: none;
     color: white;
+
     img {
       width: 100%;
+    }
+
+    @include breakpoint(tablet) {
+      width: calc(50% - 12.5px);
+    }
+
+    @include breakpoint(phone) {
+      width: 100% !important;
     }
   }
 
@@ -144,6 +180,7 @@ h4 {
 
   h3 {
     margin: 0;
+    font-family: var(--primaryFontLight);
   }
 }
 
@@ -202,10 +239,15 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 
     article {
       flex-basis: 50%;
-      flex-shrink: 1;
+      flex-shrink: 0;
+
+      @include breakpoint(phone) {
+        flex-basis: 100%;
+      }
 
       blockquote {
         font-size: 20px;
@@ -217,12 +259,18 @@ h4 {
       }
     }
 
-    aside {
-      flex-basis: 50%;
+    img {
+      margin-left: var(--gutter-size);
+      width: calc(50% - var(--gutter-size));
       flex-grow: 0;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @include breakpoint(phone) {
+        width: 100%;
+        margin: 25px 0 0;
+      }
     }
   }
 
@@ -236,16 +284,29 @@ h4 {
     padding: 25px 0;
     margin-top: 50px;
 
+    @include breakpoint(phone) {
+      flex-direction: column;
+    }
+
     img {
       width: 200px;
       flex-grow: 0;
       position: relative;
       left: -37px;
+
+      @include breakpoint(phone) {
+        position: static;
+        margin-bottom: 15px;
+      }
     }
 
     span {
       font-size: 14px;
       line-height: 22px;
+
+      @include breakpoint(phone) {
+        text-align: center;
+      }
     }
 
     strong {
@@ -267,19 +328,38 @@ h4 {
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 0 -25px -25px 0;
+
+    @include breakpoint(phone) {
+      margin: 0;
+    }
   }
 
   &__experiment-tile-container {
     width: calc(33.333% - 25px);
     margin: 0 25px 25px 0;
+
+    @include breakpoint(tablet) {
+      width: calc(50% - 25px);
+    }
+
+    @include breakpoint(phone) {
+      width: 100%;
+      margin-right: 0;
+    }
   }
 
   &__experiment-tile {
+    width: 100%;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+    }
+
     h4 {
       color: var(--fuschia);
       margin: 25px 0;
     }
-    cursor: pointer;
   }
 
   &__experiment-lightbox-content {
@@ -300,26 +380,39 @@ h4 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include breakpoint(tablet) {
+      height: 200px;
+    }
+
+    @include breakpoint(phone) {
+      height: 150px;
+    }
   }
 
   &__title {
     position: absolute;
     bottom: 25px;
-    left: $gutter-size;
+    left: var(--gutter-size);
     margin: 0;
     color: white;
     letter-spacing: 1px;
   }
 
   &__content {
-    padding: 0 100px;
+    padding: 0 var(--gutter-size);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 
     article {
       flex-basis: 33.33%;
       flex-shrink: 0;
+
+      @include breakpoint(phone) {
+        flex-basis: 100%;
+      }
 
       blockquote {
         font-size: 22px;
@@ -342,8 +435,18 @@ h4 {
       flex-grow: 0;
       padding: 25px 0 0 50px;
 
+      @include breakpoint(phone) {
+        flex-basis: 100%;
+        padding-left: 0;
+      }
+
       img {
         width: 100%;
+      }
+
+      video {
+        width: 100%;
+        margin-bottom: 25px;
       }
     }
   }
