@@ -13,5 +13,5 @@ bundle exec jekyll serve
 
 to build for production
 ```bash
-bundle exec jekyll serve
+bundle exec jekyll build
 ```
