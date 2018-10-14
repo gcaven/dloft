@@ -257,6 +257,21 @@ h4 {
   }
 }
 
+.notfound-page {
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 140px;
+    margin: 0;
+  }
+  h4 {
+    color: var(--fuschia);
+  }
+}
+
 .portfolio-grid {
   display: flex;
   justify-content: flex-start;
