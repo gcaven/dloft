@@ -38,10 +38,12 @@
         {% endfor %}
       </aside>
     </div>
+    <button class="page__back-to-top" />
   </div>
   <style>
     .portfolio-item-{{ page.slug }} h4 {
       color: var({{ page.accentColor }});
     }
   </style>
+  <script src="{{ '/js/backtotop.js' | prepend: site.baseurl }}"></script>
 </body>

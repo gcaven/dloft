@@ -1,27 +1,5 @@
 function initPage() {
 
-  var bttVisible = false;
-
-  // back to top
-  var bttButton = document.querySelector('.portfolioroot-page__back-to-top');
-  bttButton.onclick = function () {
-    window.scrollTo(0, 0);
-    bttVisible = false;
-    bttButton.classList.remove('visible');
-  }
-
-  function checkScrollPos() {
-    if (window.scrollY > 500 && !bttVisible) {
-      bttVisible = true;
-      bttButton.classList.add('visible');
-    } else if (window.scrollY <= 500 && bttVisible) {
-      bttVisible = false;
-      bttButton.classList.remove('visible');
-    }
-  }
-
-  document.addEventListener('scroll', checkScrollPos, false);
-
   // Portfolo filter logic
   var commsToggle = document.querySelector('.portfolioroot-page__filter-button.communication');
   var digitalToggle = document.querySelector('.portfolioroot-page__filter-button.digital');
