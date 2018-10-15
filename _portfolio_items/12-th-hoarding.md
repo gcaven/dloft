@@ -1,6 +1,7 @@
 ---
 layout: portfolio_item
 title: "Toronto Hydro: Copeland Station"
+shortTitle: Toronto Hydro
 type: hoarding
 filterType: communication
 accentColor: --green

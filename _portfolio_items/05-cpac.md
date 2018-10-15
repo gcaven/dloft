@@ -1,6 +1,7 @@
 ---
 layout: portfolio_item
 title: Canadian Partnership Against Cancer
+shortTitle: CPAC
 type: reports
 filterType: communication
 accentColor: --green

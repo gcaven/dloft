@@ -32,6 +32,6 @@ The name alone proposed a challenge, and it was something the client would not b
 
 Using data from previous studies I conducted on the purchasing habits of new alcohol brands in Nova Scotia, and studies the studio had done on millennials, I created personas for each of the cider flavours.
 
-The positioning of the brand became “Happiness grows on trees”. I empathised what “happiness” looked like to adults in Nova Scotia and translated that into the brand aesthetic—Apple became a relaxed camper, blueberry an adventure seeking surfer, chai a contemplative yoga practitioner, and so on. The cans were produced with a smooth matte finish and feel really wonderful in your hand.
+The positioning of the brand became “Happiness grows on trees”. I empathised what “happiness” looked like to adults in Nova Scotia and translated that into the brand aesthetic—apple became a relaxed camper, blueberry an adventure seeking surfer, chai a contemplative yoga practitioner, and so on. The cans were produced with a smooth matte finish and feel really wonderful in your hand.
 
 After the launch when I asked people what they thought of the name, to my delight the majority of people said they really hadn’t noticed it, they just looked for the package design on the shelf. The client was ecstatic, stating that sales of the new cider line represented a 500% growth in their overall cider sales in the first three months.

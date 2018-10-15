@@ -14,5 +14,9 @@
   <h4 style="color: var({{ include.item.accentColor }})">
     {{ include.item.type }}
   </h4>
-  <h3>{{ include.item.title }}</h3>
+  {% if include.item.shortTitle != null %}
+    <h3>{{ include.item.shortTitle }}</h3>
+  {% else %}
+    <h3>{{ include.item.title }}</h3>
+  {% endif %}
 </a>

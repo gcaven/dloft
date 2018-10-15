@@ -1,6 +1,7 @@
 ---
 layout: portfolio_item
-title: Museum for Human Rights
+title: Canadian Museum for Human Rights
+shortTitle: CMHR
 type: augmented reality app
 filterType: digital
 accentColor: --cyan
