@@ -15,3 +15,6 @@ to build for production
 ```bash
 bundle exec jekyll build
 ```
+
+and just in case you are reading this from the live server (hello!), find the source at
+https://github.com/gcaven/dloft
