@@ -14,7 +14,13 @@ function initPage() {
   const players = Plyr.setup(
     document.querySelectorAll('video'),
     {
-      controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png"/><span class="plyr__sr-only">Play</span></button><button type="button" class="plyr__control plyr__tab-focus" data-plyr="play" aria-label="Play"><svg class="icon--pressed" role="presentation" focusable="false"><use xlink:href="#plyr-pause"></use></svg><svg class="icon--not-pressed" role="presentation" focusable="false"><use xlink:href="#plyr-play"></use></svg><span class="label--pressed plyr__tooltip">Pause</span><span class="label--not-pressed plyr__tooltip">Play</span></button>`
+      controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png" /><span class="plyr__sr-only">Play</span></button>
+      <button type="button" class="plyr__control plyr__tab-focus plyr__custom-pause-button"
+        data-plyr="play" aria-label="Play">
+        <span role="presentation" focusable="false" xlink:href="#plyr-pause">
+          PAUSE
+        </span>
+      </button>`
     }
   );
 }

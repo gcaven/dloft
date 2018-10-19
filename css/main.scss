@@ -719,6 +719,10 @@ h4 {
 
 // Plyr
 
+.plyr--video {
+  overflow: visible;
+}
+
 .plyr__control {
   background: transparent;
   box-shadow: none;
@@ -729,21 +733,21 @@ h4 {
   &:hover {
     background: transparent !important;
   }
-  &:not(.plyr__control--overlaid) {
-    display: none;
-    @include breakpoint(phone) {
-      display: block;
-      position: absolute;
-      bottom: 5px;
-      left: 5px;
-      background-color: var(--yellow);
-      opacity: 0.8;
-      border-radius: 5px;
-      z-index: 100;
-    }
-  }
   .plyr__tooltip {
     display: none;
+  }
+
+  @include breakpoint(phone) {
+    &.plyr__custom-pause-button {
+      position: absolute;
+      bottom: -30px;
+      padding: 0px;
+      font-size: 14px;
+      color: var(--yellow) !important;
+      letter-spacing: 1.5px;
+      font-family: var(--primaryFont);
+      font-weight: 700;
+    }
   }
 }
 .plyr__control--overlaid {
@@ -759,7 +763,7 @@ h4 {
   }
 }
 .plyr--paused {
-  .plyr__control:not(.plyr__control--overlaid) {
+  .plyr__custom-pause-button {
     display: none;
   }
 }
