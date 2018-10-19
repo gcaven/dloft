@@ -12,10 +12,10 @@
     <h2>Experiments and Side Projects</h2>
     <div class="play-page__experiments">
       {% for item in page.experiments %}
-        {% if forloop.index == 1 %}
+        {% if item.link != null %}
           <a
             class="play-page__experiment-tile-container"
-            href="{{ item.video.file | prepend: site.baseurl }}"
+            href="{{ item.link | prepend: site.baseurl }}"
             target="_blank"
             rel="noreferrer noopener"
           >

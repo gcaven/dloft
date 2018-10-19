@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <div class="page video-page">
+    <video poster={{ page.video.thumbnail }} controls>
+      <source src={{ page.video.file }} type="video/mp4">
+    </video>
+  </div>
+</body>

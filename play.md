@@ -8,9 +8,7 @@ hero:
 experiments:
   - title: "Motion / The Joy of Play"
     thumbnail: /img/thumbs/JoyofPlay-thumb.jpg
-    video:
-      file: /video/joy.mp4
-      thumbnail-big: /video/joy-thumb.jpg
+    link: /joyvideo/
   - title: Sketchbook
     thumbnail: /img/thumbs/Sketchbook-thumb.jpg
     images:
