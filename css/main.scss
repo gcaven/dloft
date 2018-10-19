@@ -527,6 +527,7 @@ h4 {
   &__experiment-tile-container {
     width: calc(33.333% - 25px);
     margin: 0 25px 25px 0;
+    text-decoration: none;
 
     @include breakpoint(tablet) {
       width: calc(50% - 25px);
