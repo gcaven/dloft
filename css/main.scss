@@ -731,6 +731,7 @@ h4 {
   &:not(.plyr__control--overlaid) {
     display: none;
     @include breakpoint(phone) {
+      display: block;
       position: absolute;
       bottom: 5px;
       left: 5px;
