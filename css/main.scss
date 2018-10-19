@@ -729,13 +729,16 @@ h4 {
     background: transparent !important;
   }
   &:not(.plyr__control--overlaid) {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    background-color: var(--yellow);
-    opacity: 0.8;
-    border-radius: 5px;
-    z-index: 100;
+    display: none;
+    @include breakpoint(phone) {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      background-color: var(--yellow);
+      opacity: 0.8;
+      border-radius: 5px;
+      z-index: 100;
+    }
   }
   .plyr__tooltip {
     display: none;

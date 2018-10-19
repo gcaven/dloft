@@ -12,12 +12,26 @@
     <h2>Experiments and Side Projects</h2>
     <div class="play-page__experiments">
       {% for item in page.experiments %}
-        <div class="play-page__experiment-tile-container" id="experiment_{{ forloop.index }}">
-          <div class="play-page__experiment-tile">
-            <img src={{ item.thumbnail }}>
-            <h4>{{ item.title }}</h4>
+        {% if forloop.index == 1 %}
+          <a
+            class="play-page__experiment-tile-container"
+            href="{{ item.video.file | prepend: site.baseurl }}"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <div class="play-page__experiment-tile">
+              <img src={{ item.thumbnail }}>
+              <h4>{{ item.title }}</h4>
+            </div>
+          </a>
+        {% else %}
+          <div class="play-page__experiment-tile-container" id="experiment_{{ forloop.index }}">
+            <div class="play-page__experiment-tile">
+              <img src={{ item.thumbnail }}>
+              <h4>{{ item.title }}</h4>
+            </div>
           </div>
-        </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -31,6 +45,9 @@
       history: false,
       shareButtons: [],
       closeOnScroll: false,
+      isClickableElement: function(el) {
+        true
+      }
     };
 
     function pauseVideo() {
@@ -42,42 +59,42 @@
     }
 
     {% for item in page.experiments %}
-      var items_{{forloop.index}} = [
-        {% for vid in item.videos  %}
-          {
-            html: "<div class=\"pswp__video\"><video poster=\"{{ vid.thumbnail-big }}\" controls> <source src=\"{{ vid.file }}\" type=\"video/mp4\"></video></div>"
-          },
-        {% endfor %}
-        {% for img in item.images %}
-          {
-            src: '{{ img.file }}',
-            w: {{ img.width }},
-            h: {{ img.height }}
-          },
-        {% endfor %}
-      ]
+      {% if forloop.index > 1 %}
+        var items_{{forloop.index}} = [
+          // {% for vid in item.videos  %}
+          //   {
+          //     html: "<div class=\"pswp__video\"><video poster=\"{{ vid.thumbnail-big }}\" controls> <source src=\"{{ vid.file }}\" type=\"video/mp4\"></video></div>"
+          //   },
+          // {% endfor %}
+          {% for img in item.images %}
+            {
+              src: '{{ img.file }}',
+              w: {{ img.width }},
+              h: {{ img.height }}
+            },
+          {% endfor %}
+        ]
 
-      function openGallery_{{forloop.index}}() {
-        pauseVideo();
-        var gallery_{{forloop.index}} = new PhotoSwipe(
-          pswpElement,
-          PhotoSwipeUI_Default,
-          items_{{forloop.index}},
-          options
-        );
-        gallery_{{forloop.index}}.listen('close', function () {
+        function openGallery_{{forloop.index}}() {
           pauseVideo();
-        });
-        gallery_{{forloop.index}}.listen('beforeChange', function () {
-          pauseVideo();
-        });
-        gallery_{{forloop.index}}.init();
-        Plyr.setup(pswpElement.querySelectorAll('video'), {controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png"/><span class="plyr__sr-only">Play</span></button>`});
-        console.log('opening gallery {{forloop.index}}')
-      }
+          var gallery_{{forloop.index}} = new PhotoSwipe(
+            pswpElement,
+            PhotoSwipeUI_Default,
+            items_{{forloop.index}},
+            options
+          );
+          gallery_{{forloop.index}}.listen('close', function () {
+            pauseVideo();
+          });
+          gallery_{{forloop.index}}.listen('beforeChange', function () {
+            pauseVideo();
+          });
+          gallery_{{forloop.index}}.init();
+          // Plyr.setup(pswpElement.querySelectorAll('video'), {controls: `<button type="button" class="plyr__control plyr__control--overlaid" data-plyr="play" aria-label="Play"><img src="/img/Play-BTN.png"/><span class="plyr__sr-only">Play</span></button>`});
+        }
 
-      document.getElementById('experiment_{{forloop.index}}').addEventListener('click', openGallery_{{forloop.index}});
-
+        document.getElementById('experiment_{{forloop.index}}').addEventListener('click', openGallery_{{forloop.index}});
+      {% endif %}
     {% endfor %}
   </script>
 </body>
