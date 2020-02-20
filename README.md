@@ -4,7 +4,7 @@ Portfolio Site for Deanne Loft (www.deanneloft.com)
 Built in Jekyll
 
 ## Running Locally
-* install ruby, bundler, jekyll
+* install ruby, bundler, jekyll (See: https://jekyllrb.com/docs/installation/macos/)
 
 to run dev server
 ```bash
